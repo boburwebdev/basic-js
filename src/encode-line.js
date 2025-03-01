@@ -15,12 +15,6 @@ function encodeLine(str) {
   let prevChar = str[0];
   let newStr = "";
   for (let i = 1; i < str.length; i++) {
-    // if (str[i] !== str[i - 1]) {
-    //   newStr += count === 1 ? str[i - 1] : count + str[i - 1];
-    // } else {
-    //   count += 1;
-    // }
-
     if (prevChar === str[i]) {
       count++;
     } else {
@@ -45,7 +39,6 @@ function encodeLine(str) {
   }
   return newStr;
 }
-
 
 module.exports = {
   encodeLine
